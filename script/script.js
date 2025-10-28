@@ -90,7 +90,7 @@ function resultsSuggestions() {
 
     var searchValue = document.getElementById("userSearch").value;
     
-  fetch('https://api.giphy.com/v1/gifs/search?api_key=zLngW6Npv5ek7URDYXee7tp7lXqHIwxu&q=' + searchValue + '&limit=20&offset=0&rating=G&lang=en')
+  fetch('https://api.giphy.com/v1/gifs/search?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM=' + searchValue + '&limit=20&offset=0&rating=G&lang=en')
   .then(response => {
     return response.json();
   })
@@ -141,7 +141,7 @@ function resultsSuggestions() {
     console.log(hidden);
     hidden.innerHTML = '';
   
-fetch('https://api.giphy.com/v1/gifs/search?api_key=zLngW6Npv5ek7URDYXee7tp7lXqHIwxu&q=' + n + '&limit=20&offset=0&rating=G&lang=en')
+fetch('https://api.giphy.com/v1/gifs/search?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM=' + n + '&limit=20&offset=0&rating=G&lang=en')
 .then(response => {
   return response.json();
 })
