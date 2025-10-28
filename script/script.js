@@ -2,7 +2,7 @@
 
 // VARIABLES
 
-var giphyAPItrend = 'https://api.giphy.com/v1/gifs/trending?api_key=zLngW6Npv5ek7URDYXee7tp7lXqHIwxu&limit=20&rating=G';
+var giphyAPItrend = 'https://api.giphy.com/v1/gifs/trending?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM&limit=20&rating=G';
 var themeCss = document.getElementById("themeCss");
 
 // Cambiar tema light - dark mode 
