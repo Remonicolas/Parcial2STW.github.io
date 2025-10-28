@@ -8,7 +8,7 @@ var misGuifos = document.getElementById("misGuifos");
 var image = document.getElementById("imagen");
 let form = new FormData();
 var recorder; // globally accessible
-var apiKey = "zLngW6Npv5ek7URDYXee7tp7lXqHIwxu";
+var apiKey = "v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM";
 
 // Cambiar tema light - dark mode 
 
