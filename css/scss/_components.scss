@@ -1,0 +1,111 @@
+/* Variables */
+
+$chakra-regular:'Chakra Petch', sans-serif;
+
+/* HOVERS */
+
+.texto-botones2:hover {
+    border: 1px solid #110038;
+    border-style: dotted;
+}
+
+.texto-botones2:active {
+    color: grey;
+    border: none;
+}
+
+.botones-nav:hover, .botones-nav:active {
+    border-style: dotted;
+    background-color: #CEA1B5;
+    
+}
+
+.gif-sugerencias:hover {
+    border: 2px dotted grey;
+}
+
+.gif-sugerencias:hover ~ .gif-tags {
+    display: block;
+    position: relative;
+}
+
+.ver-mas:hover {
+    border: 2px solid #110038;
+}
+
+// Ajustes para Responsive Design 
+
+@media only screen and (max-width: 768px) {
+
+    // For mobile phones
+
+    // Index
+
+    .encabezado {
+        height: 40px;
+        text-align: center;
+    }
+
+
+    .buscador {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .texto-a-mobile {
+        display: none;
+    }
+
+    // Upload
+
+    .recuadro {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 450px;
+    }
+
+    .botones-recuadro {
+        display: inline-block;
+    }
+
+    .botones-rec {
+        width: 90%;
+    }
+
+    .botones-grabar {
+        width: 60%;
+    }
+
+    .timer {
+        display: none;
+    }
+
+    .loading2 {
+        display: none;
+    }
+
+    .recuadro3 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .texto-h1 {
+        display: none;
+    }
+
+    .botones-rec3 {
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    height: 55px;
+    width: 35%;
+    }
+
+    .botones-grabar2 {
+        display: none;
+    }
+  
+    
+}

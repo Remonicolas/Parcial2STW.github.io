@@ -1,0 +1,40 @@
+/* Cambios al dark mode */
+
+body {
+    background-color: #433A7B;
+}
+
+.encabezado {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.botones-nav {
+    background: #EE3EFE;
+border: 1px solid #110038;
+box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.texto-botones2 {
+    color: white;
+}
+
+.buscador1 {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.gif-title {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.menu-nav-sub {
+    background: #CCCCCC;
+}
+
+.menu-nav-sub-back {
+    background: #2E32FB;
+}
+
+.gif-tags {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}

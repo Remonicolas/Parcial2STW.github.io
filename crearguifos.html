@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css">
+         <!-- For Light / Dark mode -->
+         <link rel="stylesheet" id="themeCss">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+         <!-- Logo Pestaña -->
+         <link rel="icon" type="image/png" href="assets/globe_img.png">
+    </head>
+    <body id="body">
+        <!-- Texto de arriba / Encabezado -->
+        <p class="encabezado">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </p>
+        <div class="container">
+            <header>
+                <!-- Logo y Menú de navegación -->
+                <ul class="menu-nav">
+                    <!-- Flecha Izquierda -->
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/arrow.svg" alt="arrow" class="arrow">
+                        </a>
+                    </li>
+                    <li>
+                    <!-- Logo - Izquierda -->
+                        <a href="index.html">
+                            <img src="assets/gifOF_logo.png" alt="gifOF_logo" class="logo" id="logo">  
+                        </a>
+                    </li>    
+                    <li class="botones-nav texto-botones elegir-tema line-height">
+                        Elegir tema    
+                        <img src="assets/dropdown.svg" alt="dropdown">
+                    <ul class="menu-nav2">
+                        <li>
+                            <button type="button" onclick="day()" class="menu-nav-sub btn">
+                                Sailor Day
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="night()" class="menu-nav-sub menu-nav-sub-back btn">
+                                Sailor Night
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+            </header>
+            <main>
+                <!-- Crear Guifos - Captura de Vídeo -->
+                <section>
+                    <div class="recuadro" id="recuadro">
+                        <div>
+                        <p class="buscador1 texto">
+                            Crear Guifos
+                        </p>
+                        <div class="recuadro1">
+                            <img src="assets/window_img.png" alt="window">
+                    
+                            <h2 class="texto-h1">
+                                Aquí podrás crear tus propios Guifos
+                            </h2>
+                        </div>
+                        <div class="recuadro2">
+                            <p class="texto-recuadro">
+                                Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                            </p>
+                            <ul class="list-recuadro texto-recuadro">
+                                <li>
+                                    <strong>1)</strong> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                                </li>
+                                <li>
+                                    <strong>2)</strong> Capturar tu momento guifo
+                                </li>
+                                <li>
+                                    <strong>3)</strong> Revisar el momento
+                                </li>
+                                <li>
+                                    <strong>4)</strong> Listo para subir y compartir!
+                                </li>
+                            </ul>
+                            <p class="texto-recuadro">
+                                ¿Quieres comenzar a crear tu <strong>guifo</strong> ahora?
+                            </p>
+                        </div>
+                        <div class="botones-recuadro">
+                            <button class="botones-rec texto-botones">
+                                Cancelar
+                            </button>
+                            <button class="botones-rec botones-rec-color texto-botones" onclick="startVideo()">
+                                Comenzar
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="recuadro3" id="recuadro3">
+                            <div>
+                                <h1 class="buscador1 texto">
+                                    Un Chequeo Antes De Empezar
+                                </h1>
+                            </div>
+                            <img id="imagen" class="video">
+                            <div id="recuadro4">
+                            <button class="botones-grabar" id="btn-start-recording" onclick="getStreamAndRecord(); startRecord()">
+                                <img src="assets/camera.svg" alt="camera" class="img-camera">
+                                Capturar
+                            </button>
+                        </div>
+                        <div>
+                            <div class="timer texto-botones" id="timer">
+                                <div id="screen">00 : 00 : 00</div>
+                            </div>
+                            <span id="recuadro5">
+                                <div class="loading2">
+                                    <div class="loading-bar2">
+                                    </div>
+                                </div>
+                            <button class="botones-grabar botones-grabar-color" id="btn-stop-recording" onclick="stopRecording(); stopRecord()">
+                                <img src="assets/recording.svg" alt="recording" class="img-camera">
+                                Listo
+                            </button>
+                            </span>
+                        </div>
+                        <div id="recuadro6">
+                            <button class="botones-rec-color texto-botones botones-rec2" onclick="uploadGif()">
+                                Subir Guifo
+                            </button>
+                            <button class="texto-botones botones-rec2" onclick="getStreamAndRecord(); startRecord()">
+                                Repetir Captura
+                            </button>
+                        </div>
+                        <div id="recuadro7">
+                            <div class="upload-gif">
+                                <img src="assets/globe_img.png" alt="globe_img" class="globe-img">
+                                <p class="texto-botones3">
+                                    Estamos subiendo tu guifo...
+                                </p>
+                                <div class="loading">
+                                    <div class="loading-bar">
+                                    </div>
+                                </div>
+                                <p class="texto-loading">
+                                    Tiempo restante: <span class="underlined">38 años</span> algunos minutos
+                                </p>
+                            </div>
+                            <button class="texto-botones botones-rec2 botones-grabar">
+                                Cancelar
+                            </button>
+                        </div>
+                        <div id="recuadro8">
+                                <img id="gif-subido2" class="video2">
+                                <div class="recuadro9">
+                                    <h2 class="texto-h1">
+                                        Guifo creado con éxito.
+                                    </h2>
+                                    <button class="texto-botones botones-rec3" id="js-textareacopybtn">
+                                        Copiar Enlace Guifo
+                                    </button>
+                                    <button class="texto-botones botones-rec3">
+                                    <a download="MiGif" id="gifDescarga" class="texto-a-decoration texto-botones">
+                                        Descargar Guifo
+                                    </a>
+                                    </button>
+                                </div>
+                            <a class="botones-grabar2 texto-a-decoration" href="crearguifos.html">
+                                <p class="texto-botones texto-a">
+                                Listo
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Mis Guifos -->
+                <section>
+                    <div class="sugerimos" id="mis-guifos">
+                        <p class="texto3">
+                            Mis Guifos
+                        </p>
+                    </div>
+                    <div id="misGuifos" class="gifs-big-container">
+                    </div>
+                </section>
+            </main>
+        </div>
+    <input class="js-copytextarea">
+    </input>
+    </body>
+<!-- RecordRTC -->
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+<!-- JavaScript -->
+<script src="script/upload.js"></script>
+</html>

@@ -1,0 +1,337 @@
+/* Código CSS Repetido - Generalizado */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #FEF7FA;
+}
+
+
+
+
+/* Variables */
+
+$chakra-regular:'Chakra Petch', sans-serif;
+
+/* Container general */
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Botones */
+
+.botones-nav {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 144px;
+    border: #110038, 1px;
+}
+
+.botones-nav-margin {
+    margin-right: 16px;
+}
+
+.botones-buscador {
+    display: flex;
+    justify-content: space-around;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 10%;
+    margin-top: 18px;
+}
+
+.texto-botones {
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.texto-botones2 {
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.botones-rec {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 50%;
+}
+
+.botones-rec2 {
+    margin-right: 2%;
+    float: right;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 144px;
+}
+
+.botones-rec3 {
+    margin-right: 20%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    float: right;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 80%;
+
+}
+
+.botones-rec-color {
+    background: #F7C9F3;
+}
+
+.botones-dropdown {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    height: 36px;
+    width: 36px;
+}
+
+.menu-nav-sub {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    width: 150px;
+    height: 36px;
+    margin-top: 10px;
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.menu-nav-sub-back {
+    background-color: #F0F0F0;;
+}
+
+.botones-grabar {
+    margin-top: 5px;
+    margin-right: 5%;
+    float: right;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    width: 20%;
+    height: 36px;
+    font-family: $chakra-regular;
+    font-size: 16px;
+}
+
+.botones-grabar2 {
+    margin-top: 100px;
+    margin-right: 10%;
+    float: right;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    width: 20%;
+    height: 36px;
+    font-family: $chakra-regular;
+    font-size: 16px;
+}
+
+.botones-grabar-color {
+    background: #FF6161;;
+}
+
+.img-camera {
+    margin-right: 25px;
+}
+
+.timer {
+    float: left;
+    width: 15%;
+    height: 36px;
+    margin-left: 5%;
+    background-color: white;
+    margin-top: 5px;
+    border: 1px solid #979797;
+}
+
+.upload-gif {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #979797;
+}
+
+.ver-mas {
+    display: block;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 8px;
+    background: #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    height: 27px;
+    width: 75px;
+    text-align: center;
+    font-size: 12px;
+    font-family: $chakra-regular;
+    color: white;
+    font-weight: bold;
+        
+}
+
+/* Texto P */
+
+.texto {
+    font-family: $chakra-regular;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.texto2 {
+    background-position: 10px;
+    background-repeat: no-repeat;
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.texto3 {
+    font-family: $chakra-regular;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin: 7px;
+    padding-left: 16px;
+}
+
+.texto-h1 {
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+.texto-recuadro {
+    font-family: $chakra-regular;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.texto-botones3 {
+    font-family: $chakra-regular;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.line-height {
+    line-height: 33px;
+}
+
+.texto-loading {
+    font-family: $chakra-regular;
+    font-size: 12px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 5px;
+}
+
+.underlined {
+    text-decoration: line-through;
+}
+
+.texto-a {
+    margin-top: 7px;
+    margin-right: 15px;
+}
+
+.texto-a-decoration {
+    text-decoration: none;
+}
+
+/* GIFs */
+
+.gif-title {
+    display: block;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    height: 20px;
+    width: 260px;
+}
+
+.gif-title2 {
+    float: left;
+    font-family: $chakra-regular;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.close {
+    margin-top: 3px;
+    float: right;
+}
+
+.gif-sugerencias {
+    height: 280px;
+    width: 260px;
+}
+
+.gif-tags {
+    display: none;
+    margin-top: -30px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    height: 20px;
+    width: 260px;
+    text-align: center;
+    font-size: 14px;
+    font-family: $chakra-regular;
+    color: white;
+    font-weight: bold;
+        
+}
+
+/* IMAGENES */
+
+.globe-img {
+    width: 5%;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+}
