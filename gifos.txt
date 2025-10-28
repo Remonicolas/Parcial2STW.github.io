@@ -1,7 +1,7 @@
-LISANDRO BIGI - gifOS
+DELFINO REMO - gifOS
 
 URL PUBLICA:
-
+https://remonicolas.github.io/Parcial2STW.github.io/
 
 REPOSITORIO EN GIT: 
-
+https://github.com/Remonicolas/Parcial2STW.github.io
