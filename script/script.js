@@ -182,19 +182,19 @@ return error
   }
 
   function getSearchResultsSuggestionsNumberOne() {
-    n = "memes";
+    n = "matrix";
     getSearchResultsSuggestions();
     console.log(n);
   }
 
   function getSearchResultsSuggestionsNumberTwo() {
-    n = "coding";
+    n = "python";
     getSearchResultsSuggestions();
     console.log(n);
   }
 
   function getSearchResultsSuggestionsNumberThree() {
-    n = "tomb raider";
+    n = "memes";
     getSearchResultsSuggestions();
     console.log(n);
   }
