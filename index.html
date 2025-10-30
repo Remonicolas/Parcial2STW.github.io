@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están</title>
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="/Parcial2STW.github.io/css/style.css">
-    <!-- For Light / Dark mode -->
-    <link rel="stylesheet" id="themeCss" href="/Parcial2STW.github.io/css/light-theme.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
-    <!-- Logo Pestaña -->
-    <link rel="icon" type="image/png" href="/Parcial2STW.github.io/assets/globe_img.png">
-</head>
-<body id="body">
-    <!-- Texto de arriba / Encabezado -->
-    <p class="encabezado">
-        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 20150904
-    </p>
-    <div class="container">
-        <header>
-            <!-- Logo y Menú de navegación -->
-            <ul class="menu-nav">
-                <li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- For Light / Dark mode -->
+        <link rel="stylesheet" id="themeCss">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+         <!-- Logo Pestaña -->
+        <link rel="icon" type="image/png" href="assets/globe_img.png">
+    </head>
+    <body id="body">
+        <!-- Texto de arriba / Encabezado -->
+        <p class="encabezado">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 20150904
+        </p>
+        <div class="container">
+            <header>
+                <!-- Logo y Menú de navegación -->
+                <ul class="menu-nav">
+                    <li>
                     <!-- Logo - Izquierda -->
-                    <a href="/Parcial2STW.github.io/index.html">
-                        <img src="/Parcial2STW.github.io/assets/gifOF_logo.png" alt="gifOF_logo" class="logo" id="logo">
-                    </a>  
-                </li>    
-                <!-- Menú - Derecha -->
-                <li class="right-items"> 
-                    <a class="texto-botones2 nav-right" href="/Parcial2STW.github.io/crearguifos.html#mis-guifos">
-                        Mis Guifos
-                    </a>
-                </li>
-                <li class="botones-nav texto-botones elegir-tema line-height">
-                    Elegir tema
-                    <img src="/Parcial2STW.github.io/assets/dropdown.svg" alt="dropdown">
-                    <ul class="menu-nav2">
+                        <a href="index.html">
+                            <img src="assets/gifOF_logo.png" alt="gifOF_logo" class="logo" id="logo">
+                        </a>  
+                    </li>    
+                    <!-- Menú - Derecha -->
+                    <li class="right-items"> 
+                        <a class="texto-botones2 nav-right" href="crearguifos.html#mis-guifos">
+                            Mis Guifos
+                        </a>
+                    </li>
+                    <li class="botones-nav texto-botones elegir-tema line-height">
+                            Elegir tema
+                            <img src="assets/dropdown.svg" alt="dropdown">
+                        <ul class="menu-nav2">
+                            <li>
+                                <button type="button" onclick="day()" class="menu-nav-sub btn">
+                                    Sailor Day
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" onclick="night()" class="menu-nav-sub menu-nav-sub-back btn">
+                                    Sailor Night
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
                         <li>
-                            <button type="button" onclick="day()" class="menu-nav-sub btn">
-                                Sailor Day
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" onclick="night()" class="menu-nav-sub menu-nav-sub-back btn">
-                                Sailor Night
-                            </button>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/Parcial2STW.github.io/crearguifos.html" class="botones-nav botones-nav-margin nav-right texto-a-decoration">
-                        <p class="texto-botones texto-a">
-                            Crear Guifos
-                        </p>     
-                    </a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <!-- Buscador principal -->
-            <section class="buscador">
-                <h2>Buscador</h2>
-                <div class="buscador1">
-                    <p class="texto">
-                        Buscar
-                    </p>
-                </div>
-                <div class="buscador2">
-                    <input placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" class="buscador3 texto3" id="userSearch" type="search" autocomplete="off" onclick="resultsSuggestions()">
-                    <a href="#results" class="botones-buscador texto2 texto-a-decoration" onclick="getSearchResults(); hideResults()">
-                        <img src="/Parcial2STW.github.io/assets/lupa_inactive.svg" alt="lupa_inactive">
-                        <p class="texto-a texto-a-mobile">
+                            <a href="crearguifos.html" class="botones-nav botones-nav-margin nav-right texto-a-decoration">
+                                <p class="texto-botones texto-a">
+                                    Crear Guifos
+                                </p>     
+                            </a>
+                    </li>
+                </ul>
+            </header>
+            <main>
+                <!-- Buscador principal -->
+                <section class="buscador">
+                    <div class="buscador1">
+                        <p class="texto">
                             Buscar
                         </p>
-                    </a>
-                </div>
-                <div class="menu-nav3" id="menu-nav3">
-                    <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberOne(); hideResults()">
-                        Matrix
-                    </button>
-                    <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberTwo(); hideResults()">
-                        Python
-                    </button>
-                    <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberThree(); hideResults()">
-                        Memes
-                    </button>
-                </div>
-            </section>
-            <!-- Hoy te sugerimos -->
-            <section>
-                <h2>Hoy te sugerimos</h2>
-                <div class="sugerimos">
+                    </div>
+                    <div class="buscador2">
+                        <input placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" class="buscador3 texto3" id="userSearch" type="search" autocomplete="off" onclick="resultsSuggestions()"></input>
+                        <a href="#results" class="botones-buscador texto2 texto-a-decoration" onclick="getSearchResults(); hideResults()">
+                            <img src="assets/lupa_inactive.svg" alt="lupa_inactive">
+                            <p class="texto-a texto-a-mobile">
+                                Buscar
+                            </p>
+                        </a>
+                    </div>
+                    <div class="menu-nav3" id="menu-nav3">
+                        <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberOne(); hideResults()">
+                            Matrix
+                        </button>
+                        <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberTwo(); hideResults()">
+                            Python
+                        </button>
+                        <button type="button" class="menu-nav-sug" onclick="getSearchResultsSuggestionsNumberThree(); hideResults()">
+                            Memes
+                        </button>
+                    </div>
+                </section>
+                <!-- Hoy te sugerimos -->
+                <section>
+                    <div class="sugerimos">
+                        <h2 class="texto3 margin-bottom">
+                            Hoy te sugerimos
+                        </h2>
+                    </div>
                     <div id="misGuifos3" class="gifs-big-container">
                         <div>
                             <div class="gif-title">
                                 <p id="gif-sugerencias-title1" class="gif-title2"></p>
                                 <a href="">
-                                    <img src="/Parcial2STW.github.io/assets/close.svg" alt="close" class="close">
+                                    <img src="assets/close.svg" alt="close" class="close">
                                 </a>
                             </div>
-                            <img id="gif1" alt="gif1" class="gif-sugerencias" src="/Parcial2STW.github.io/assets/gif-loading-image.gif">
+                            <img id="gif1" alt="gif1" class="gif-sugerencias" src="assets/gif-loading-image.gif">
                             <button class="ver-mas">
                                 Ver Más...
                             </button>
@@ -112,10 +113,10 @@
                             <div class="gif-title">
                                 <p id="gif-sugerencias-title2" class="gif-title2"></p>
                                 <a href="">
-                                    <img src="/Parcial2STW.github.io/assets/close.svg" alt="close" class="close">
+                                    <img src="assets/close.svg" alt="close" class="close">
                                 </a>
                             </div>
-                            <img id="gif2" alt="gif2" class="gif-sugerencias" src="/Parcial2STW.github.io/assets/gif-loading-image.gif">
+                            <img id="gif2" alt="gif2" class="gif-sugerencias" src="assets/gif-loading-image.gif">
                             <button class="ver-mas">
                                 Ver Más...
                             </button>
@@ -124,10 +125,10 @@
                             <div class="gif-title">
                                 <p id="gif-sugerencias-title3" class="gif-title2"></p>
                                 <a href="">
-                                    <img src="/Parcial2STW.github.io/assets/close.svg" alt="close" class="close">
+                                    <img src="assets/close.svg" alt="close" class="close">
                                 </a>
                             </div>
-                            <img id="gif3" alt="gif3" class="gif-sugerencias" src="/Parcial2STW.github.io/assets/gif-loading-image.gif">
+                            <img id="gif3" alt="gif3" class="gif-sugerencias" src="assets/gif-loading-image.gif">
                             <button class="ver-mas">
                                 Ver Más...
                             </button>
@@ -136,40 +137,42 @@
                             <div class="gif-title">
                                 <p id="gif-sugerencias-title4" class="gif-title2"></p>
                                 <a href="">
-                                    <img src="/Parcial2STW.github.io/assets/close.svg" alt="close" class="close">
+                                    <img src="assets/close.svg" alt="close" class="close">
                                 </a>
                             </div>
-                            <img id="gif4" alt="gif4" class="gif-sugerencias" src="/Parcial2STW.github.io/assets/gif-loading-image.gif">
+                            <img id="gif4" alt="gif4" class="gif-sugerencias" src="assets/gif-loading-image.gif">
                             <button class="ver-mas">
                                 Ver Más...
                             </button>
                         </div>
                     </div>
+                </section>
+                <!-- Tendencias -->
+                <div class="sugerimos">
+                    <h2 class="texto3" id="texto3">
+                        Tendencias
+                    </h2>
                 </div>
-            </section>
-            <!-- Tendencias -->
-            <section id="tendencias">
-                <h2>Tendencias</h2>
-                <div id="misGuifos2" class="gifs-big-container">
-                </div>
-            </section>
-            <!-- Resultados de búsqueda -->
-            <section id="searchResults">
-                <h2>Resultados de búsqueda</h2>
-                <div id="misGuifos" class="gifs-big-container">
-                </div>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <br>
-        <br>
-        <p class="texto-botones2">
-            Guifo - 2025 - Delfino Remo
-        </p>
-        <br>
-    </footer>
+                <section id="tendencias">
+                    <div id="misGuifos2" class="gifs-big-container">
+                    </div>
+                </section>
+                <!-- Resultados de búsqueda -->
+                <section id="searchResults">
+                    <div id="misGuifos" class="gifs-big-container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <br>
+            <br>
+            <p class="texto-botones2">
+                Guifos - 2025 - Delfino Remo
+            </p>
+            <br>
+        </footer>
+    </body>
     <!-- JavaScript -->
-    <script src="/Parcial2STW.github.io/script/script.js"></script>
-</body>
+<script src="script/script.js"></script>
 </html>
