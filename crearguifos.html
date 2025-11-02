@@ -8,7 +8,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
          <!-- For Light / Dark mode -->
-         <link rel="stylesheet" id="themeCss">
+         <link rel="stylesheet" id="themeCss" href="css/style.css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
          <!-- Logo Pestaña -->
@@ -106,7 +106,7 @@
                                     Un Chequeo Antes De Empezar
                                 </h1>
                             </div>
-                            <img id="imagen" class="video">
+                            <img id="imagen" class="video" src="" alt="">
                             <div id="recuadro4">
                             <button class="botones-grabar" id="btn-start-recording" onclick="getStreamAndRecord(); startRecord()">
                                 <img src="assets/camera.svg" alt="camera" class="img-camera">
@@ -117,7 +117,7 @@
                             <div class="timer texto-botones" id="timer">
                                 <div id="screen">00 : 00 : 00</div>
                             </div>
-                            <span id="recuadro5">
+                            <div id="recuadro5">
                                 <div class="loading2">
                                     <div class="loading-bar2">
                                     </div>
@@ -126,7 +126,7 @@
                                 <img src="assets/recording.svg" alt="recording" class="img-camera">
                                 Listo
                             </button>
-                            </span>
+                            </div>
                         </div>
                         <div id="recuadro6">
                             <button class="botones-rec-color texto-botones botones-rec2" onclick="uploadGif()">
@@ -155,7 +155,7 @@
                             </button>
                         </div>
                         <div id="recuadro8">
-                                <img id="gif-subido2" class="video2">
+                                <img id="gif-subido2" class="video2" src="" alt="">
                                 <div class="recuadro9">
                                     <h2 class="texto-h1">
                                         Guifo creado con éxito.
@@ -164,8 +164,8 @@
                                         Copiar Enlace Guifo
                                     </button>
                                     <button class="texto-botones botones-rec3">
-                                    <a download="MiGif" id="gifDescarga" class="texto-a-decoration texto-botones">
-                                        Descargar Guifo
+                                    <a download="MiGif" id="gifDescarga" class="texto-a-decoration texto-botones" href="">
+                                        <span>Descargar Guifo</span>
                                     </a>
                                     </button>
                                 </div>
@@ -179,6 +179,7 @@
                 </section>
                 <!-- Mis Guifos -->
                 <section>
+                    <h2 style="display:none;">Mis Guifos</h2>
                     <div class="sugerimos" id="mis-guifos">
                         <p class="texto3">
                             Mis Guifos
@@ -190,7 +191,6 @@
             </main>
         </div>
     <input class="js-copytextarea">
-    </input>
     </body>
 <!-- RecordRTC -->
 <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
