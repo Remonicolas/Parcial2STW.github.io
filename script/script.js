@@ -1,5 +1,18 @@
 /* JavaScript */
 
+// Memoria de temas
+window.onload = function() {
+    // Aplicar tema guardado
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "night") {
+        themeCss.href = "css/dark-mode.css";
+        logo.src = 'assets/gifOF_logo_dark.png';
+    } else {
+        themeCss.href = "css/style.css";
+        logo.src = 'assets/gifOF_logo.png';
+    }
+};
+
 // VARIABLES
 
 var giphyAPItrend = 'https://api.giphy.com/v1/gifs/trending?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM&limit=20&rating=G';
@@ -10,10 +23,12 @@ var themeCss = document.getElementById("themeCss");
 function day(){
   logo.src='assets/gifOF_logo.png';
   themeCss.href="";
+  localStorage.setItem("theme", "day"); // Guardamo temaa
 }
 function night(){
   logo.src='assets/gifOF_logo_dark.png';
   themeCss.href="css/dark-mode.css";
+  localStorage.setItem("theme", "night"); // Guardamos tema
 }
 
 // Función para despeglar menú sugerencias
