@@ -1,8 +1,9 @@
 /* JavaScript */
 
 // Memoria de temas
-window.onload = function() {
-    // Aplicar tema guardado
+// Aplicar tema guardado y otros onload
+window.addEventListener("DOMContentLoaded", () => {
+    // Tema guardado
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "night") {
         themeCss.href = "css/dark-mode.css";
@@ -11,7 +12,10 @@ window.onload = function() {
         themeCss.href = "css/style.css";
         logo.src = 'assets/gifOF_logo.png';
     }
-};
+
+    // Contador
+    pantalla = document.getElementById("screen");
+});
 
 // VARIABLES
 
