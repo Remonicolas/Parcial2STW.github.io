@@ -1,5 +1,17 @@
 
 // JAVASCRIPT - Crearguifos.html
+// Memoria tema guardado
+window.onload = function() {
+    // Aplicar tema guardado
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "night") {
+        themeCss.href = "css/dark-mode.css";
+        logo.src = 'assets/gifOF_logo_dark.png';
+    } else {
+        themeCss.href = "css/style.css";
+        logo.src = 'assets/gifOF_logo.png';
+    }
+};
 
 // Variables
 
@@ -15,10 +27,12 @@ var apiKey = "v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM";
 function day(){
     themeCss.href="";
     logo.src='assets/gifOF_logo.png';
+    localStorage.setItem("theme", "day");
   }
   function night(){
     themeCss.href="css/dark-mode.css";
     logo.src='assets/gifOF_logo_dark.png';
+    localStorage.setItem("theme", "night"); // Guardamos tema
   }  
 
 
