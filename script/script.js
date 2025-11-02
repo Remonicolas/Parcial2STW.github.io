@@ -217,4 +217,16 @@ return error
     getSearchResultsSuggestions();
     console.log(n);
   }
+  // Búsqueda con Enter
+  const input = document.getElementById("userSearch");
+
+  input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      getSearchResults();
+      hideResults();
+  }
+  });
+
+
+
 
