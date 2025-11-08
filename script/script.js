@@ -46,12 +46,12 @@ function resultsSuggestions() {
 
 // Sugerencias
 
-    fetch(giphyAPItrend)
-    .then(response => {
+    fetch(giphyAPItrend) // HAce el pedido por api a ghipy
+    .then(response => { // Toma la respuesta y la convierte a un archivo json
         return response.json();
     })
 
-    .then(json => {
+    .then(json => { // Muestra en pantall el json con el .log
         console.log(json)
 
         for(i = 0; i < 4; i++) { // 4 PRIMEROS RESULTADOS PARA "HOY TE SUGERIMOS"
@@ -105,50 +105,50 @@ function resultsSuggestions() {
 
     function getSearchResults() {
 
-      document.getElementById("misGuifos").innerHTML = '';
+      document.getElementById("misGuifos").innerHTML = ''; // Borra resultados anteriores
 
-    var searchValue = document.getElementById("userSearch").value;
+    var searchValue = document.getElementById("userSearch").value; // lee  lo q el user ingresa
     
   fetch('https://api.giphy.com/v1/gifs/search?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM&q=' + searchValue + '&limit=20&offset=0&rating=G&lang=en')
-  .then(response => {
+  .then(response => { // con fetch manda lo q el user ingreasa a la API en peticion GEt y combierte a json
     return response.json();
   })
 
   .then(json => {
-    console.log(json)
+    console.log(json) // Muestra en pantalla
     document.getElementById("texto3").innerHTML = "Resultados para: [ " + searchValue + " ]";
 
-    for(i = 0; i < json.data.length; i++) {
+    for(i = 0; i < json.data.length; i++) { // Bucle recoore gift encontrados
         
         console.log(json);
         
 
-        const divCajas = document.createElement("div");
+        const divCajas = document.createElement("div"); // Crea caja donde van los gift
         divCajas.classList.add("gifs-container");
         misGuifos.appendChild(divCajas);
 
-        const gifSubido = document.createElement("img");
+        const gifSubido = document.createElement("img"); // crea imagn y titulo con sus clases css
         const gifTitle = document.createElement("p");
         gifSubido.classList.add("gif-sugerencias");
         gifTitle.classList.add("gif-tags");
         divCajas.appendChild(gifSubido);
         divCajas.appendChild(gifTitle);
 
-        gifSubido.src = json.data[i].images.original.url;
+        gifSubido.src = json.data[i].images.original.url; // COntenido obtenido de la API 
         gifTitle.innerHTML = json.data[i].title;
     }
   
 
   return data
   })
-  .catch((error) => {
+  .catch((error) => { // Manejo de errorres por si API Fallara
   return error
   })
 
     }
 
     function hideResults() {
-     document.getElementById("searchResults").style.display = "block";
+     document.getElementById("searchResults").style.display = "block";// Mostrar secion de resultado en busqueda y ocultar gif tendencia
      document.getElementById("tendencias").style.display = "none";
     }
 
@@ -156,7 +156,7 @@ function resultsSuggestions() {
 
   function getSearchResultsSuggestions() {
 
-    var hidden = document.getElementById("misGuifos");
+    var hidden = document.getElementById("misGuifos"); 
     console.log(hidden);
     hidden.innerHTML = '';
   
@@ -167,7 +167,7 @@ fetch('https://api.giphy.com/v1/gifs/search?api_key=v9mgWil42Pqc1lyo9rTv7sDH1Qml
 
 .then(json => {
   console.log(json);
-  document.getElementById("texto3").innerHTML = "Resultados para: [ " + n + " ]";
+  document.getElementById("texto3").innerHTML = "Resultados para: [ " + n + " ]"; // n variable guardada para sugerencias matrix etc.
 
   for(i = 0; i < json.data.length; i++) {
       
@@ -218,7 +218,7 @@ return error
     console.log(n);
   }
   // Búsqueda con Enter
-  const input = document.getElementById("userSearch");
+  const input = document.getElementById("userSearch"); // Agregado buscador escuchando Enter
 
   input.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
