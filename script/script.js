@@ -156,12 +156,12 @@ function resultsSuggestions() {
 
   function getSearchResultsSuggestions() {
 
-    var hidden = document.getElementById("misGuifos"); 
-    console.log(hidden);
-    hidden.innerHTML = '';
+    var hidden = document.getElementById("misGuifos"); // Guarda en variable hidden la respuesta del ID misguifos
+    console.log(hidden); // Muestra en consola la variable obtenida
+    hidden.innerHTML = ''; // Borra todo lo q contiene hiddenHTMKL
   
 fetch('https://api.giphy.com/v1/gifs/search?api_key=v9mgWil42Pqc1lyo9rTv7sDH1QmlmFFM&q=' + n + '&limit=20&offset=0&rating=G&lang=en')
-.then(response => {
+.then(response => { // Este bloque hace una peticion a la API con la varibale n q fue ingresada en el input 
   return response.json();
 })
 
